@@ -11,6 +11,10 @@
     
     <script>
       function addDivTags() {
+        
+        const h1 = document.createElement("h1");
+        h1.innerText = "Web analytics debugging utilities";
+        
         // create the bold font style tag
         const boldTag = document.createElement("b");
         boldTag.innerText = "Testing ignore_referrer and referrer overwrite";
@@ -27,6 +31,8 @@
         const body = document.getElementsByTagName("body")[0];
 
         // append the bold tag, div tags, and an empty line to the body
+        body.appendChild(h1);
+        body.appendChild(document.createElement("br"));
         body.appendChild(boldTag);
         body.appendChild(document.createElement("br"));
         body.appendChild(div1);
