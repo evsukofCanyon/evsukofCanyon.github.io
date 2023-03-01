@@ -53,7 +53,7 @@
         const button = document.createElement("button");
         button.innerText = "Click me";
         button.onclick = function() {
-          window.location.href = input.value;
+          window.open(input.value, "_blank");
         };
         body.appendChild(button);
       }
